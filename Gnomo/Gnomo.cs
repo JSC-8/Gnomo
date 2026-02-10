@@ -5,11 +5,13 @@ namespace GnomosProyecto
     {
         protected string nombre;
         protected string color;
+        protected int vida;
 
-        public Gnomo(string nombre, string color)
+        public Gnomo(string nombre, string color, int vida)
         {
             this.nombre = nombre;
             this.color = color;
+            this.vida = vida;
         }
 
         public string Nombre
@@ -22,7 +24,7 @@ namespace GnomosProyecto
         {
             get => color;
             set => color = value;
-        }
+        }  
     }
 }
 
